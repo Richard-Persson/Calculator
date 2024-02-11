@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@ body {
 h1{
   font-family: 'Courier New', Courier, monospace;
 }
-/* Style for the calculator container */
+
 .calculator {
   width: 350px;
   margin: auto;
@@ -28,43 +28,44 @@ h1{
   font-size: 28px;
   text-align: right;
   margin-bottom: 20px;
+  cursor: default;
+  
 }
 
-/* Style for the grid of buttons */
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-/* Style for buttons */
 button {
   width: 100%;
-  height: 80px; /* Increased button height */
-  font-size: 28px; /* Increased font size */
+  height: 80px; 
+  font-size: 28px;
   background-color: #f0f0f0;
   border: none;
   cursor: pointer;
   border-radius: 10px;
 }
 
-/* Hover effect for buttons */
+
 button:hover {
   background-color: #ddd;
 }
 
-/* Style for the zero button */
+
 .number.zero {
-  grid-column: span 2; /* Make zero button wider */
+  grid-column: span 2; 
 }
 
-/* Style for operator buttons */
+
 .operator {
-  background-color: #FFA500; /* Change background color for operators */
+  background-color: #FFA500; 
 }
 
-/* Style for equal button */
+
 .equal {
-  background-color: #008000; /* Change background color for equal button */
-  color: #fff; /* Change text color for equal button */
+  background-color: #008000;
+  color: #fff; 
 }
